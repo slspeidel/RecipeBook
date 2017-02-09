@@ -1,3 +1,4 @@
+import { RecipesComponent } from './recipes.component';
 import { Ingredient } from './../shared/ingredient';
 import { Recipe } from './recipe';
 
@@ -14,5 +15,13 @@ export class RecipeService {
 
   getRecipes() {
     return this.recipes;
+  }
+
+  getRecipe(id: number) {
+    return this.recipes[id];
+  }
+
+  deleteRecipe(recipe: Recipe) {
+    this.recipes.splice(this.recipes.indexOf(recipe), 1);
   }
 }

@@ -22,13 +22,13 @@ import { RecipeStartComponent } from './recipes/recipe-start.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    DropdownDirective,
     RecipesComponent,
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
     ShoppingListComponent,
     ShoppingListAddComponent,
-    DropdownDirective,
     RecipeEditComponent,
     RecipeStartComponent
   ],
